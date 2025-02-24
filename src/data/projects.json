@@ -8,12 +8,12 @@
       "source": "https://github.com/kerrliam3/SFTE-Website"
     },
     {
-      "title": "UI/UX Project",
-      "imageSrc": "assets/projects/UIUX.png",
-      "description": "UI/UX project focused on navigation, visual hierarchy, & accessibility.",
-      "skills": ["Figma", "Adobe Suite"],
-      "demo": "https://embed.figma.com/design/ABeW2zf3LyslS9yMCycWle/Forge?node-id=0-1&embed-host=share",
-      "source": "https://embed.figma.com/design/ABeW2zf3LyslS9yMCycWle/Forge?node-id=0-1&embed-host=share"
+      "title": "Divergent Design Group Website",
+      "imageSrc": "assets/projects/DDGScreenshot.png",
+      "description": "Website project made for a design company",
+      "skills": ["CSS", "React.js", "Vite.js", "JavaScript"],
+      "demo": "https://www.divergentdesigngroup.com/",
+      "source": "https://github.com/malachimuhic/divergentdesigngroup.com"
     },
     {
       "title": "Captone | HoopAI",
