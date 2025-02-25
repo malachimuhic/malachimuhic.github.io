@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Bushnell SFTE Site",
+      "imageSrc": "assets/projects/project.png",
+      "description": "Website built for the Software Engineering Club at Bushnell University",
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "demo": "https://bushnellsoftwareclub.com/",
+      "source": "https://github.com/kerrliam3/SFTE-Website"
+    },
+    {
+      "title": "UI/UX Project",
+      "imageSrc": "assets/projects/UIUX.png",
+      "description": "UI/UX project focused on navigation, visual hierarchy, & accessibility.",
+      "skills": ["Figma", "Adobe Suite"],
+      "demo": "https://embed.figma.com/design/ABeW2zf3LyslS9yMCycWle/Forge?node-id=0-1&embed-host=share",
+      "source": "https://embed.figma.com/design/ABeW2zf3LyslS9yMCycWle/Forge?node-id=0-1&embed-host=share"
+    },
+    {
+      "title": "Captone | HoopAI",
+      "imageSrc": "assets/projects/nba.svg",
+      "description": "(In Progress) Supervised Learning Algorithm to predict NBA Wins/Losses",
+      "skills": ["Python", "API", "Package Integration"],
+      "demo": "https://github.com/malachimuhic/HoopAI",
+      "source": "https://github.com/malachimuhic/HoopAI"
+    }
+  ]

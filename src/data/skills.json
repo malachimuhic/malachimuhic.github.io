@@ -1,0 +1,38 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "assets/skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "assets/skills/css.png"
+    },
+    {
+      "title": "React",
+      "imageSrc": "assets/skills/react.png"
+    },
+    {
+      "title": "Javascript",
+      "imageSrc": "assets/skills/javascript-original.svg"
+    },
+    {
+      "title": "Python",
+      "imageSrc": "assets/skills/python-original.svg"
+    },
+    {
+      "title": "Git",
+      "imageSrc": "assets/skills/git-original.svg"
+    },
+    {
+      "title": "AWS",
+      "imageSrc": "assets/skills/aws.svg"
+    },
+    {
+      "title": "SQL",
+      "imageSrc": "assets/skills/MySQL.svg"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "assets/skills/java-original-wordmark.svg"
+    }
+  ]
