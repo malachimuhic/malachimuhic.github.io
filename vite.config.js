@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/',  // e.g. '/portfolio/' – must match your repo name
+  base: '/',           // root site: works for malachimuhic.github.io and malachimuhic.com
   build: {
-    outDir: 'docs',          // GitHub Pages will serve from /docs
+    outDir: 'docs',    // build goes into docs/
   },
   css: {
     modules: {
