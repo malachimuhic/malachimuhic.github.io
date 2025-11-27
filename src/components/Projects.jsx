@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const projects = [
   {
-    title: "Multi-LoRA Training & Runtime Pipeline",
+    title: "LLM: LoRA Training & Runtime Pipeline",
     description:
       "Made changes to an end-to-end PyTorch training system to fix inference and allow flexible extension and fine-tuning of transformer models through LoRA, a lightweight and parameter-efficient method for training.",
     tags: ["Python", "LoRA", "ONNX Runtime", "FastAPI"],
