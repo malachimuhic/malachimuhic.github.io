@@ -79,17 +79,24 @@ export default function Hero() {
   return (
     <section id="hero">
       <div className="hero-inner">
-        {/* Left: text */}
-        <div className="text-left">
-          <h1 className="text-[3.5rem] font-bold m-0 mb-3 inline-flex items-baseline gap-[0.15rem] whitespace-nowrap min-h-[1.2em]">
-            <TypewriterName onDone={() => setCursorState('finishing')} />
-            <span className={cursorClass} aria-hidden="true">|</span>
+        {/* Content floated to the right of the sidebar */}
+        <div className="flex flex-col items-start ml-auto">
+        <div className="flex flex-col items-start">
+          <Image
+            src="/me.png"
+            alt="Portrait of Malachi Muhic"
+            width={180}
+            height={180}
+            className="hero-photo"
+            priority
+          />
+
+          <h1 className="text-[1.75rem] font-bold m-0 mt-4 mb-3 whitespace-nowrap">
+            Malachi Muhic
           </h1>
 
-          <p className="text-[1.6rem] text-muted m-0 mb-4">Technical Portfolio</p>
-
-          {/* Social links */}
-          <div className="flex items-center gap-[0.85rem] mt-7 flex-wrap md:flex-nowrap">
+          {/* Social links — vertical list */}
+          <div className="flex flex-col items-start gap-3">
             <a
               href="https://github.com/malachimuhic"
               target="_blank"
@@ -99,8 +106,6 @@ export default function Hero() {
               <Github size={20} strokeWidth={1.75} />
               GitHub
             </a>
-
-            <span className="text-muted opacity-50 mx-1">•</span>
 
             <a
               href="https://medium.com/@malachimuhic"
@@ -112,8 +117,6 @@ export default function Hero() {
               Medium
             </a>
 
-            <span className="text-muted opacity-50 mx-1">•</span>
-
             <a
               href="https://www.linkedin.com/in/malachi-muhic/"
               target="_blank"
@@ -124,8 +127,6 @@ export default function Hero() {
               LinkedIn
             </a>
 
-            <span className="text-muted opacity-50 mx-1">•</span>
-
             <a
               href="mailto:mmuhic3@gatech.edu"
               className="text-[#111] no-underline inline-flex items-center gap-[0.4rem] transition-colors duration-150 hover:text-accent"
@@ -134,22 +135,9 @@ export default function Hero() {
               Email
             </a>
           </div>
-
-          {/* Accent line */}
-          <div className="w-full h-1 bg-muted rounded-sm mt-7" aria-hidden="true" />
+        </div>
         </div>
 
-        {/* Right: photo */}
-        <div className="flex justify-center">
-          <Image
-            src="/me.png"
-            alt="Portrait of Malachi Muhic"
-            width={340}
-            height={340}
-            className="hero-photo"
-            priority
-          />
-        </div>
       </div>
     </section>
   );

@@ -8,16 +8,24 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <>
+    <div className="site-layout">
       <Header />
-      <main>
+
+      {/* Left: sticky hero sidebar */}
+      <aside className="site-sidebar">
         <Hero />
-        <About />
-        <Projects />
-        <Resume />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+      </aside>
+
+      {/* Right: scrollable content */}
+      <div className="site-content">
+        <main>
+          <About />
+          <Projects />
+          <Resume />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </div>
   );
 }

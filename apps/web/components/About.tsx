@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative z-[1] bg-bg-about border-t border-b border-[#eee] py-[4.5rem]"
+      className="relative z-[1] py-[4.5rem]"
     >
       <div className="max-w-site mx-auto px-6">
         <h2 className="text-[2.2rem] font-bold mb-8">About Me</h2>

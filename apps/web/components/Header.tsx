@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const navLinks = [
@@ -11,13 +11,28 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen]     = useState(false);
+  const [visible, setVisible]   = useState(true);
+  const lastScrollY              = useRef(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const current = window.scrollY;
+      setVisible(current <= lastScrollY.current || current < 10);
+      lastScrollY.current = current;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const toggleMenu = () => setIsOpen((open) => !open);
   const closeMenu  = () => setIsOpen(false);
 
   return (
-    <header className="sticky top-0 z-20 backdrop-blur-md bg-white/90 border-b border-transparent">
+    <header
+      className="sticky top-0 z-20 backdrop-blur-md bg-white/90 border-b border-transparent transition-transform duration-300"
+      style={{ transform: visible ? 'translateY(0)' : 'translateY(-100%)' }}
+    >
       <nav className="flex items-start max-w-site mx-auto px-6 py-3 gap-6">
         {/* Logo */}
         <Image
